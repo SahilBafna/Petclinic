@@ -1,10 +1,10 @@
 node {  
     stage('Build') { 
         //git 'https://github.com/SahilBafna/Petclinic.git'
-        sh "mvn clean compile"
+        sh "/opt/maven/bin/mvn clean compile"
     }
     stage('Test') { 
-        sh "mvn clean test"
+        sh "/opt/maven/bin/mvn clean test"
     }
    
 }
